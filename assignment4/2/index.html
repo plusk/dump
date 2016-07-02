@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html id="top">
+	<head>
+		<title>
+			Forms by Anders
+		</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="main">
+			<h1>Form</h1>
+			
+			<form method="post" action="http://www.idi.ntnu.no/~michailg/IT2805/form.php">
+				<fieldset>
+					* optional<br><br>
+					Full name:<br>
+					<input type="text" name="name" placeholder="e.g. Lars Andersen" required><br><br>
+					Email:<br>
+					<input type="email" name="email" placeholder="e.g. example@test.com" required><br><br>
+					* Address:<br>
+					<input type="text" name="address" placeholder="e.g. Testing Street 42A"><br><br>
+					* Contact phone number:<br>
+					<input type="tel" name="phone" placeholder="e.g. 123 45 678"><br><br>
+					
+					<input type="radio" name="year" value="1" required>1st Year-Freshman<br>
+					<input type="radio" name="year" value="2" required>2nd Year-Sophomore<br>
+					<input type="radio" name="year" value="3" required>3rd Year-Junior<br>
+					<input type="radio" name="year" value="4" required>4th Year-Senior<br><br>
+					
+					Expected start date:<br>
+					<input type="date" name="startDate" placeholder="e.g. DD/MM/YYYY" required><br><br>
+	
+					Classes of interest:<br>
+					<input type="checkbox" name="classes[]" value="ITX1001">ITX1001: HTML Basics<br>
+					<input type="checkbox" name="classes[]" value="ITX1002">ITX1002: URLs and Site Structures<br>
+					<input type="checkbox" name="classes[]" value="ITX2001">ITX2001: Introduction to Cascading Style Sheets (CSS)<br>
+					<input type="checkbox" name="classes[]" value="ITX2002">ITX2002: CSS Properties and Applications<br>
+					<input type="checkbox" name="classes[]" value="ABC1001">ABC1001: Working with Multimedia on the Web<br>
+					<input type="checkbox" name="classes[]" value="JSX1000">SX1000: Introduction to JavaScript<br>
+					<input type="checkbox" name="classes[]" value="JSX1040">JSX1040: JavaScript: DOM<br>
+					<input type="checkbox" name="classes[]" value="XML1000">XML1000: XML: Formatting Namespace Trees<br><br>
+					
+					* Comment:<br>
+					<textarea name="comments" placeholder="Enter text here..." value="comments"></textarea><br><br>
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+
+			<hr />
+			<span class="footer">
+				<p>
+					By Anders Larsen
+				</p>
+				<p>
+					<a href="#top">
+						Back to top
+					</a>
+				</p>
+			</span>
+		</div>
+	</body>
+</html>

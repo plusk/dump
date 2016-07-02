@@ -1,0 +1,52 @@
+/* Det eneste jeg har gjort med sidene er å legge inn div med id content og wrapper, og en footer */
+html {
+    overflow-y: scroll;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("images/background.png");
+	background-color: #8C8C8C;
+}
+#wrapper {
+	position: relative;
+	width: 904px;
+	text-align: left;
+	margin: auto;
+	height: auto;
+}
+#logo {
+	position:absolute;
+	width:100px;
+	height:100px;
+	border-width: 1px;
+	border-style: solid;
+}
+#header {
+	position:absolute;
+	width:800px;
+	height:100px;
+	left: 112px;
+	border-width: 1px;
+	border-style: solid;
+}
+#content, #contentmain{
+	position:relative;
+	width:902px;
+	height:auto;
+	border-width: 1px;
+	border-style: solid;
+	padding: 5px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+#contentmain {
+	top: 110px;
+}
+.footer {
+	color: #666;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	color: #112D87;
+}

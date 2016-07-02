@@ -1,0 +1,55 @@
+html {
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+body {
+	font-family: Georgia, serif;
+	background-image: url("images/background.png");
+}
+#wrapper {
+	position:relative;
+	left: 13%;
+	right: 50%;
+	width: 1160px;
+	text-align: left;
+	height: auto;
+}
+#header {
+	position: relative;
+	width: 450px;
+	left: 37%;
+}
+#sidebar {
+	position: relative;
+	height:auto;
+	border-width: 1px;
+	border-style: solid;
+	padding: 5px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+	width: 225px;
+	float: left;
+}
+#content {
+	position:relative;
+	width:900px;
+	height:auto;
+	border-width: 1px;
+	border-style: solid;
+	padding: 5px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+	float: right;
+}
+.footer {
+	color: #666;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	color: #9B8E74;
+	font-family: Helvetica, sans-serif;
+}
+a:hover {
+	color: #FF6819;
+}
