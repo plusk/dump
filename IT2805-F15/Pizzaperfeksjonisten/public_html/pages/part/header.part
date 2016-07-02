@@ -1,0 +1,37 @@
+
+            <table id="headertable">
+                <tr>
+                    <td><a href="index.html"><img src="../images/misc/logo1.png" class="logo" alt="logo" /></a></td>
+                    <td><a href="index.html"><h1>Pizzaperfeksjonisten</h1></a></td>
+                    <td><a href="index.html"><img src="../images/misc/logo1.png" class="logo" alt="logo" /></a></td>
+                </tr>
+            </table>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li>
+                        <div class="container">
+                            <a class="mainMenu" href="menu.html" id="menyLink" onmouseover="rolloverMenu(1, 'Menu');" onmouseout="rolloverMenu(0, 'Menu');">Meny</a>
+                            <div class="rolloverMenu" id="Menu" style="display: none;" onmouseover="rolloverMenu(1, 'Menu');" onmouseout="rolloverMenu(0, 'Menu');">
+                                <ul style="list-style-type:none">
+                                    <li><a href="classic_pizza.html">Classic Pizza</a><br /></li>
+                                    <li><a href="premium_pizza.html">Premium Pizza</a><br /></li>
+                                    <li><a href="allergy_list.html">Allergiliste</a><br /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="ordering.html">Bestill</a></li>
+                    <li>
+                        <div class="container">
+                            <a class="mainMenu" href="about_us.html" id="orderLink" onmouseover="rolloverMenu(1, 'orderMenu');" onmouseout="rolloverMenu(0, 'orderMenu');">Om oss</a>
+                            <div class="rolloverMenu" id="orderMenu" style="display: none;" onmouseover="rolloverMenu(1, 'orderMenu');" onmouseout="rolloverMenu(0, 'orderMenu');">
+                                <ul style="list-style-type:none">
+                                <li><a href="restaurant.html">Restaurant</a><br /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>

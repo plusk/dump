@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--FILE NAME: contact.html
+WRITTEN BY: Eirik Rismyhr
+WHEN: October 2015
+PURPOSE: Give contact information such as address and phone number, and provide a simple google maps plugin.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kontakt oss</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../images/misc/favicon.ico" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../scripts/template.js"></script>
+        <script type="text/javascript" src="../scripts/rollover.js"></script>
+        <script type="text/javascript" src="../scripts/randomHeader.js"></script>
+        <script type="text/javascript" src="../scripts/konami.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript" src="../scripts/googlemaps.js"></script>
+    </head>
+    <body>
+        <header id="top"> <!-- this will be filled in through jQuery load, template.js-->
+        </header>
+        <div id="wrapper">
+            <div id="hdiv">
+                <img id="himg" alt="header bilde" src="" /> <!-- src will be supplied by randomHeader.js -->
+            </div>
+            <article id="main">   
+                <h2>Kontakt oss</h2>
+                <p>
+                    <ul>
+                        <li>Adresse: Togveien 27F, 7048 Trondheim</li>
+                        <li>Daglig leder: Raul Olsen</li>
+                        <li>Telefonnummer: 123 45 678</li>
+                    </ul>
+                </p>
+                <div id="map"></div> <!-- googlemaps.js will put a map here! -->
+            </article>
+            <footer> <!-- this will be filled in through jQuery load, template.js-->
+            </footer>
+        </div>
+    </body>
+</html>

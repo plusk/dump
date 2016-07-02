@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--FILE NAME: premium_pizza.html
+WRITTEN BY: Håvard Hellem
+WHEN: October 2015
+PURPOSE: display the items in the premium pizza menu.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Premium Pizza</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../images/misc/favicon.ico" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../scripts/template.js"></script>
+        <script type="text/javascript" src="../scripts/rollover.js"></script>
+        <script type="text/javascript" src="../scripts/randomHeader.js"></script>
+        <script type="text/javascript" src="../scripts/konami.js"></script>
+    </head>
+    <body>
+        <header id="top"> <!-- this will be filled in through jQuery load, template.js-->
+        </header>
+        <div id="wrapper">
+            <div id="hdiv">
+                <img id="himg" alt="header bilde" src="" /> <!-- src will be supplied by randomHeader.js -->
+            </div>
+            <article id="main"> 
+                <h2>Premium pizza</h2>
+                <!--Table for menu item-->
+                <table class="pizzatable">
+                    <tr> <!--First row: picture and nr/name.-->
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/12.jpg" alt="pizza 12" /></td>
+                        <td><h2>#12 - Vestkantskinke</h2></td>
+                    </tr>
+                    <tr> <!--Second row: ingredients.-->
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Vår originale skinke, vår egen osteblanding og fersk mozzarella.</td>
+                    </tr>
+                    <tr> <!--Third row: price and options for HOT and/or VEG-->
+                        <td><b>Pris:</b> 155,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <!-- Repeat this pattern, changing the id, ingredients, name, price and so on -->
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/13.jpg" alt="pizza 13" /></td>
+                        <td><h2>#13 - Bromstad pepperoni</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Pepperoni, rødløk, vår egen osteblanding og fersk mozzarella. Toppes med bladpersille etter steking.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 160,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/14.jpg" alt="pizza 14" /></td>
+                        <td><h2>#14 - Buranskinka </h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Veldig mye av vår originale skinke med mye smak, marinert aromasopp, rødløk, vår egen egen osteblanding og fersk mozzarella.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 165,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/15.jpg" alt="pizza 15" /></td>
+                        <td><h2>#15 - Kjøttpakka</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Saftig biffkjøtt, purre og rødløk, vår egen osteblanding og fersk mozzarella. Toppes med bladpersille etter steking.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 170,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/16.jpg" alt="pizza 16" /></td>
+                        <td><h2>#16 - Enda tyngre himmel</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Peppermarinert mørbradbiff, hvitløkskrydrede kjøttboller, vår originale Pepperoni, rødløk og persille.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 175,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/17.jpg" alt="pizza 17" /></td>
+                        <td><h2>#17 - Kjøttgilde</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Peppermarinert mørbradbiff, crispy bacon, marinert kylling, skinke, rødløk, paprika og persille.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 180,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/18.jpg" alt="pizza 18" /></td>
+                        <td><h2>#18 - Biff og bearnaise</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Peppermarinert mørbradbiff, rødløk, purre, bearnaise.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 185,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/19.jpg" alt="pizza 19" /></td>
+                        <td><h2>#19 - Voll ventricina</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> En meget smaksrik Ventricina-pølse med pepper, chili og paprika. Toppes med cherrytomater, purre, fersk mozzarella og vår egen osteblanding.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 190,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/20.jpg" alt="pizza 20" /></td>
+                        <td><h2>#20 - Femstjerners kjøttboller</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Tre typer eksklusive kjøttboller: Buffalo Chicken, Pork Parmesan og Blue Oak Mozzarella. Aromasopp, cherrytomater, purre, jalapeño og rødløk. Toppes med persille.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 195,-</td>
+                        <td class="hot">HOT</td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/21.jpg" alt="pizza 21" /></td>
+                        <td><h2>#21 - Rauls krydderpølse</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Pizzaperfektionistens egen pølse med jalapeño, chili og godt krydder. Rødløk, salte kapers, vår egen osteblanding og fersk mozzarella. Toppes med bladpersille.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 200,-</td>
+                        <td class="hot">HOT</td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/22.jpg" alt="pizza 22" /></td>
+                        <td><h2>#22 - Chorizo og calabra</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Chorizo, pepperoni calabra, hvitløkskrydrede kjøttboller, vår originale pepperoni, purre, rødløk, cherrytomater.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 205,-</td>
+                        <td class="hot">HOT</td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/23.jpg" alt="pizza 23" /></td>
+                        <td><h2>#23 Nidelv n'duja</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> En meget smaksrik kjøttdeig laget på spekekjøtt med hot paprika, jalapeño og godt krydder. Fersk mozzarella, rødløk, jalapeño og cherrytomater. Toppes med bladpersille.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 210,-</td>
+                        <td class="hot">HOT</td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/24.jpg" alt="pizza 24" /></td>
+                        <td><h2>#24 - Rosenborgreka</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Kjempereker fra Argentina marinert i karri, hvitløk og krydder. Fersk purre og rød paprika. Toppes med limezest etter steking.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 215,-</td>
+                        <td class="hot">HOT</td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/premium/25.jpg" alt="pizza 25" /></td>
+                        <td><h2>#25 - Svartlamoen vegetar</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Spinat, fersk avokado, marinert aromasopp, rødløk, artisjokker, oliven og cherrytomater. Toppes med limezest, salt og nykvernet pepper etter steking.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 220,-</td>
+                        <td class="hot"></td>
+                        <td class="veg">VEG</td>
+                    </tr>
+                </table>
+            </article>
+            <footer> <!-- this will be filled in through jQuery load, template.js-->
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">  
+        <title>P3</title>
+        <link href="pmain.css" rel="stylesheet">     
+    </head>
+    <body>
+        <header>
+            <h1>P3 Design Changes</h1>
+        </header>
+        <section>
+            <h2> 1. Header </h2>
+            <p>P3 Changes</p>
+            <p>Eirik Rismyhr, Andreas F. Eikeland, Håvard Hellem, Anders Larsen, Sivert N. Solum</p>
+            <p>IT2805 October 2015</p>   
+        </section>
+        <section>
+            <h2> 2. Administrative Details </h2>
+            <p>Our client is the imaginary pizza maker "Pizzaperfeksjonisten". As such we do not have a specific contact person. <a href="../index.html">Here</a> is our website.</p>
+        </section>
+        <section>
+            <h2> The changes we have made </h2>
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th>Changes</th>
+                </tr>
+                <tr>
+                    <td>template (general page structure on all html pages)</td>
+                    <td>Some changes were made to the layout of the site. The footer no longer redirects to a separate sitemap page, as the sitemap is nowhere near elaborate enough to warrant its own page. The sitemap is in the footer itself. We also added social media links to the footer, and our logo is on the header of the page. The header text and the logos link to index.html for easy navigation. The footer even features a "back to top" link!</td>
+                </tr> 
+                <tr>
+                    <td>index.html</td>
+                    <td>Previously known as home.html, the index no longer feature star ratings on the reviews. The reviews are now random on page load, and the index slideshow starts on a random image, then loads in order and loops the slideshow at the end. The height of the header image automatically adjusts to the header image, as the slideshow images and the random headers for non-index pages have a different height.</td>
+                </tr>
+                <tr>
+                    <td>menu.html</td>
+                    <td>Made as specified by the design document, the text is now orange(#FF9736) as opposed to black, following our color scheme.</td>
+                </tr>
+                <tr>
+                    <td>classic_pizza.html<br>premium_pizza.html</td>
+                    <td>The layout of these pages was changed/improved significantly. The information related to each pizza is presented in an orderly fashion and removed the use of menuAnimation.js, which we will get to later. Premium pizza was previously known as special pizza.</td>
+                </tr>
+                <tr>
+                    <td>allergy_list.html</td>
+                    <td>The table roughly follows the mockup, and naturally it has been expanded to account for our entire menu and all possible allergens. There is now also a symbol for pizzas that have traces of an allergen, so that either an allergen is present, not present, or traces of it may be present.</td>
+                </tr>
+                <tr>
+                    <td>ordering.html</td>
+                    <td>Ordering is one of the larger pages on our site. This page has been expanded with some new input fields, the fields are now categorized and neatly presented. As opposed to writing the orders to a server-side textfile, the page now posts the forms via email to the client. This method was suggested by the project roadmap, so we changed the page to use it. The page also warns you if one of the required fields are empty, and the method of selecting how many and which pizzas you want has been reworked.</td>
+                </tr>
+                <tr>
+                    <td>about_us.html</td>
+                    <td>This page remains mostly unchanged and serves as the backstory for the fictitious company, Pizzaperfeksjonisten. The group-photo of the creators has been removed, as no such photo exists.</td>
+                </tr>
+                <tr>
+                    <td>restaurant.html</td>
+                    <td>Mostly unchanged, slideshow moved down, numbers integrated in text.</td>
+                </tr>
+                <tr>
+                    <td>contact.html</td>
+                    <td>Mostly unchanged, googlemaps functionality is provided by javascript file. </td>
+                </tr>
+                <tr>
+                    <td class="new">metabout.html</td>
+                    <td>New html file that serves as a description of the site itself, the sources of the images and so on.</td>
+                </tr>
+                <tr>
+                    <td>main.css</td>
+                    <td>The css is largely similar to what was shown in the mockups, as we actually made the core css and then took pictures of it for the mockups. The file contains all the css for the site and as such the file has become longer over time.</td>
+                </tr>
+                <tr>
+                    <td class="old">fixedNavbar.js</td>
+                    <td>This file was originally its own javaScript file, but we remade it using mostly jQuery, as a part of template.js. Our new solution is less jumpy/choppy, and it executes after the header has been loaded in with jQuery.</td>
+                </tr>
+                <tr>
+                    <td>googlemaps.js</td>
+                    <td>A separate JS file for the Google Maps functionality on the contact page.</td>
+                </tr>
+                <tr>
+                    <td>ordering.js</td>
+                    <td>As detailed in the ordering.html changes, the ordering works slightly different from the original thought. We now send the form data by email, as opposed to writing to a server side text file.</td>
+                </tr>
+                <tr>
+                    <td class="new">randomHeader.js</td>
+                    <td>New javascript file that loads up a random header image on page load. This script is connected to all of the pages, except for index, which has its own index slideshow.</td>
+                </tr>
+                <tr>
+                    <td>randomReview.js</td>
+                    <td>Simple javascript file that puts a random review in the slideshow text box on index.file. Random review for every page load.</td>
+                </tr>
+                <tr>
+                    <td>rollover.js</td>
+                    <td>Working as intended, hovering over a menu reveals a drop down menu of all the sub-pages.</td>
+                </tr>
+                <tr>
+                    <td class="new">randomPizza.js</td>
+                    <td>New file that adds some flavor to menu.html. A random classic pizza is features in the link to classic pizzas, and the same applies to the premium box.</td>
+                </tr>
+                <tr>
+                    <td>slideshowIndex.js<br>slideshowRestaurant.js</td>
+                    <td>These files work as intended, minor change in work division (detailed further down).</td>
+                </tr>
+                <tr>
+                    <td class="old">menuAnimation.js</td>
+                    <td>This was scrapped as it didn't add anything meaningful to the menu, enough information was already on display. We believe we have enough JavaScript to fulfill the requirements, so we figured it was safe to drop a redundant function.</td>
+                </tr>
+                <tr>
+                    <td class="new">konami.js</td>
+                    <td>New file, dumb little easter egg code. Doesn't really do anything meaningful for the site, mostly added for the fun of it. Redirects to a different site when you perform the konami code.</td>
+                </tr>
+                <tr>
+                    <td class="new">Modularity</td>
+                    <td>template.js is our attempt at modularity. In this javascript file we utilize jQuery to access two SSI documents, namely header.part and footer.part. The header and footer are the same on every page, so we figured it'd make sense to load it as a template, so that any changes to those files would apply to all our html pages. After the header is loaded up, a callback function goes into the nav and highlights the current page in the navbar. It's all very dynamic and fun. Most of our JavaScript applies to all our pages, so the code is in external files.</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2> Updated Organizational Scheme </h2>
+            <p>
+                The changes here were primarily regarding the images and the general structure of the files. 
+            </p>
+            <p>
+                All these files are inside the public_html directory. Next to that directory is index.html, which automatically directs users to the actual index page in the pages folder. The images have been categorized so that we don't just have a mess of images in a single folder. The pages folder is mere preference, doesn't really impact the site in any meaningful way. Here is our list of files and folders:
+            </p>
+            <ul>
+                <li>pages/
+                    <ul>
+                        <li>about_us.html</li>
+                        <li>allergy_list.html</li>
+                        <li>classic_pizza.html</li>
+                        <li>premium_pizza.html</li>
+                        <li>contact.html</li>
+                        <li>index.html</li>
+                        <li>menu.html</li>
+                        <li>metabout.html</li>
+                        <li>ordering.html</li>
+                        <li>restaurant.html</li>
+                        <li>main.css</li>
+                        <li>part/
+                            <ul>
+                                <li>header.part</li>
+                                <li>footer.part</li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </li>
+                <li>images/
+                    <ul>
+                        <li>headers/
+                            <ul>
+                                <li>1.png</li>
+                                <li>2.png</li>
+                                <li>...</li>
+                                <li>8.png</li>
+                            </ul>
+                        </li>
+                        <li>indexPizza/
+                            <ul>
+                                <li>pizza1.png</li>
+                                <li>pizza2.png</li>
+                                <li>...</li>
+                                <li>pizza4.png</li>
+                            </ul>
+                        </li>
+                        <li>menuimg/
+                            <ul>
+                                <li>classic/
+                                    <ul>
+                                        <li>01.jpg</li>
+                                        <li>02.jpg</li>
+                                        <li>...</li>
+                                        <li>11.jpg</li>
+                                    </ul>
+                                </li>
+                                <li>premium/
+                                    <ul>
+                                        <li>12.jpg</li>
+                                        <li>13.jpg</li>
+                                        <li>...</li>
+                                        <li>25.jpg</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>restaurantpics/
+                            <ul>
+                                <li>rest1.jpg</li>
+                                <li>rest2.jpg</li>
+                                <li>...</li>
+                                <li>rest5.jpg</li>
+                            </ul>
+                        </li>
+                        <li>misc/
+                            <ul>
+                                <li>bg.png</li>
+                                <li>facebook.png</li>
+                                <li>twitter.png</li>
+                                <li>logo1.png</li>
+                                <li>logo2.png</li>
+                                <li>favicon.ico</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>scripts/
+                    <ul>
+                        <li>googlemaps.js</li>
+                        <li>ordering.js</li>
+                        <li>randomHeader.js</li>
+                        <li>randomReview.js</li>
+                        <li>randomPizza.js</li>
+                        <li>rollover.js</li>
+                        <li>slideshowIndex.js</li>
+                        <li>slideshowRestaurant.js</li>
+                        <li>konami.js</li>
+                        <li>template.js</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Here is our final work division. Do keep in mind that some files were far more demanding than others, so "number of files in charge of" is not a good measurement for amount of work done. 
+            </p>
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th>Description</th>
+                    <th>In charge</th>
+                </tr>
+                <tr>
+                    <td>Index.html</td>
+                    <td>The homepage, introduction/welcome to the site</td>
+                    <td>Anders</td>
+                </tr>
+                <tr>
+                    <td>Menu.html<br>randomPizza.js</td>
+                    <td>The menu of the different pizza categories and allergy list. The image for classic pizza and premium pizza is a random one from the category, determined by javascript. Adds some flavor to the menu.</td>
+                    <td>Anders</td>
+                </tr>
+                <tr>
+                    <td>Classic_pizza.html</td>
+                    <td>The menu of classic pizzas</td>
+                    <td>Håvard</td>
+                </tr>
+                <tr>
+                    <td>Premium_pizza.html</td>
+                    <td>The menu of premium pizzas, meaning more exotic and elaborate pizzas</td>
+                    <td>Håvard</td>
+                </tr>
+                <tr>
+                    <td>Allergy_list.html</td>
+                    <td>An overview of the allergens present in the pizza menu</td>
+                    <td>Sivert</td>
+                </tr>
+                <tr>
+                    <td>Ordering.html</td>
+                    <td>The page where customers can order pizza</td>
+                    <td>Andreas</td>
+                </tr>
+                <tr>
+                    <td>Ordering.js</td>
+                    <td>JavaScript that accompanies the html page, sends the form information by email (as was specified by the project roadmap)</td>
+                    <td>Andreas</td>
+                </tr>
+                <tr>
+                    <td>Restaurant.html</td>
+                    <td>Information about the restaurant</td>
+                    <td>Sivert</td>
+                </tr>
+                <tr>
+                    <td>About_us.html</td>
+                    <td>Background history about Pizzaperfeksjonisten</td>
+                    <td>Sivert</td>
+                </tr>
+                <tr>
+                    <td>Contact.html</td>
+                    <td>Contact information w/ google maps location</td>
+                    <td>Eirik</td>
+                </tr>
+                <tr>
+                    <td>googlemaps.js</td>
+                    <td>Google maps for contact.html</td>
+                    <td>Eirik</td>
+                </tr>
+                <tr>
+                    <td>Metabout.html</td>
+                    <td>A meta about page</td>
+                    <td>Anders</td>
+                </tr>
+                <tr>
+                    <td>SlideshowIndex.js</br>SlidehowRestaurant.js</td>
+                    <td>The JavaScript that generates random images of pizzas on the homepage, and the restaurant page. Håvards previous project, menuAnimation.js, was deemed to be redundant and therefore removed. The two slideshow files turned out to be more demanding than previously anticipated (transitions required jQuery), so Håvard assisted Sivert on those files.</td>
+                    <td>Sivert</br>Håvard</td>
+                </tr>
+                <tr>
+                    <td>rollover.js</td>
+                    <td>The JacaScript for drop down menus in the navbar, allowing for quick navigation to subpages</td>
+                    <td>Eirik</td>
+                </tr>
+                <tr>
+                    <td>randomHeader.js</td>
+                    <td>A random header image is displayed on every page, adds some flavor. Added on a whim. Index.html has a slideshow for header images instead of this</td>
+                    <td>Anders</td>
+                </tr>
+                <tr>
+                    <td>randomReview.js</td>
+                    <td>The review box on the index.html slideshow has a random review for every load of the page</td>
+                    <td>Sivert</td>
+                </tr>
+                <tr>
+                    <td>konami.js</td>
+                    <td>Anders thought it'd be hillarious to add the konami code to the page. It's not particularly funny, but it only took five minutes. Redirects you to a different site when you perform the konami code. </td>
+                    <td>Anders</td>
+                </tr>
+                <tr>
+                    <td>template.js</td>
+                    <td>Loads up the header and footer from .part files, allows for modularity. Also sets "thispage" in nav, and holds the fixedNavbar functionality.</td>
+                    <td>All</td>
+                </tr>
+                <tr>
+                    <td>main.css</td>
+                    <td>The CSS for all the styling for the webpage</td>
+                    <td>All</td>
+                </tr>
+                <tr>
+                    <td>Final control</td>
+                    <td>Double checking everything to make sure nothing is broken</td>
+                    <td>All</td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>

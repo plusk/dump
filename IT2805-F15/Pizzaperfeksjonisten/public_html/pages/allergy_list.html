@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!--FILE NAME: allergy_list.html
+WRITTEN BY: Sivert N. Solum
+WHEN: October 2015
+PURPOSE: Describes the different allergies in our food
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Allergi liste</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../images/misc/favicon.ico" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../scripts/template.js"></script>
+        <script type="text/javascript" src="../scripts/rollover.js"></script>
+        <script type="text/javascript" src="../scripts/randomHeader.js"></script>
+        <script type="text/javascript" src="../scripts/konami.js"></script>
+    </head>
+    <body>
+        <header id="top"> <!-- this will be filled in through jQuery load, template.js-->
+        </header>
+        <div id="wrapper">
+            <div id="hdiv">
+                <img id="himg" alt="header bilde" src="" /> <!-- src will be supplied by randomHeader.js -->
+            </div>
+            <article id="main">
+                <h2>Allergener</h2>
+                <p>
+                <div>
+                    <table id="allergitabell" border="1px">
+                        <tr> <!-- RAD 0(ALLERGENER) -->
+                            <th> </th>
+                            <th> Nøtter </th> 
+                            <th> Peanøtter </th>
+                            <th> Laktose </th>
+                            <th> Gluten </th>
+                            <th> Skalldyr </th>
+                            <th> Egg </th>
+                            <th> Fisk </th>
+                            <th> Soya </th>
+                            <th> Selleri </th>
+                            <th> Sennep </th>
+                            <th> Sesamfrø </th>
+                            <th> Sulfitt </th>
+                        </tr>
+                        
+                        <tr> <!-- RAD 1 Classic START -->
+                            <th> #1 Skinke </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 2 -->
+                            <th> #2 Pepperoni </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 3 -->
+                            <th> #3 Skinke og pepperoni </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 4 -->
+                            <th> #4 Pepperbiff </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 5 -->
+                            <th> #5 Tung himmel </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 6 -->
+                            <th> #6 Stort skudd </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 7 -->
+                            <th> #7 Thai kylling </th>
+                            <td> S </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 8 -->
+                            <th> #8 Biff og rosmarin </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 9 -->
+                            <th> #9 Biff og chipotle </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 10 -->
+                            <th> #10 Hissig jalapeño </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 11 -->
+                            <th> #11 Grønn hage </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 12 -->
+                            <th> #12 Vestkantskinke </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 13 -->
+                            <th> #13 Bromstad pepperoni </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 14 -->
+                            <th> Buranskinka </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 15 -->
+                            <th> #15 Kjøttpakka </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> S </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 16 -->
+                            <th> #16 Enda tyngre himmel </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 17 -->
+                            <th> #17 Kjøttgilde </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 18 -->
+                            <th> #18 Biff og bearnaise </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> S </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 19 -->
+                            <th> #19 Voll ventricina </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 20 -->
+                            <th> #20 Femstjerners kjøttboller </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 21 -->
+                            <th> #21 Rauls krydderpølse </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> X </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 22 -->
+                            <th> #22 Chorizo og calabra </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 23 -->
+                            <th> #23 Nidelv n'duja </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 24 -->
+                            <th> #24 Rosenborgreka </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                        </tr>
+                        
+                        <tr> <!-- RAD 25 -->
+                            <th> #25 Svartlamoen vegetar </th>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> X </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                            <td> S </td>
+                            <td> O </td>
+                            <td> O </td>
+                            <td> X </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <p>
+                X = Allergenet finnes i produktet <br>
+                S = Det finnes spor av allergenet i produktet <br>
+                O = Allergenet finnes ikke i produktet
+                </p>
+            </article>
+            <footer> <!-- this will be filled in through jQuery load, template.js-->
+            </footer>
+        </div>
+    </body>
+</html>

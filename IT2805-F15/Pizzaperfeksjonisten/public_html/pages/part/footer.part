@@ -1,0 +1,44 @@
+
+                <table>
+                    <tr>
+                        <th><ul><li>Sitemap</li></ul></th>
+                        <th><ul><li>Sosiale medier</li></ul></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul id="sitemap">
+                                <li><a href="index.html">Hjem</a></li>
+                                <li><a href="menu.html">Meny</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="classic_pizza.html">Classic pizza</a></li>
+                                        <li><a href="premium_pizza.html">Premium pizza</a></li>
+                                        <li><a href="allergy_list.html">Allergi liste</a></li>
+                                    </ul>
+                                </li>       
+                                <li><a href="ordering.html">Bestill</a></li>
+                                <li><a href="about_us.html">Om oss</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="restaurant.html">Restaurant</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Kontakt</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul id="medier">
+                                <li><a href="https://www.facebook.com/pizzaperfeksjonisten/"><img src="../images/misc/facebook.png" class="logo" alt="facebook" /></a></li>
+                                <li><a href="https://twitter.com/Pizzaperfeksjon"><img src="../images/misc/twitter.png" class="logo" alt="twitter" /></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <p class="dogtag">
+                    <a href="metabout.html">Laget av Andreas F. Eikeland, Håvard Hellem, Anders Larsen, Eirik Rismyhr og Sivert Nikolai Solum</a>
+                    <br>
+                </p>
+                <p class="dogtag">
+                    <a href="#top">Tilbake til toppen!</a>
+                </p>

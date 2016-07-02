@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--FILE NAME: menu.html
+WRITTEN BY: Anders Larsen
+WHEN: October 2015
+PURPOSE: Splash site that redirects to classic pizza, premium pizza and the allergy list.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meny</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../images/misc/favicon.ico" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../scripts/template.js"></script>
+        <script type="text/javascript" src="../scripts/rollover.js"></script>
+        <script type="text/javascript" src="../scripts/randomHeader.js"></script>
+        <script type="text/javascript" src="../scripts/konami.js"></script>
+
+        <script type="text/javascript" src="../scripts/randomPizza.js"></script>
+    </head>
+    <body>
+        <header id="top"> <!-- this will be filled in through jQuery load, template.js-->
+        </header>
+        <div id="wrapper">
+            <div id="hdiv">
+                <img id="himg" alt="header bilde" src="" /> <!-- src will be supplied by randomHeader.js -->
+            </div>
+            <article id="main">
+                <table class="menutable">
+                    <tr><td><a href="classic_pizza.html" class="tda"><img src="../images/menuimg/classic/1.jpg" id="classicPic"></a></td></tr> <!-- this src will be replaced by randomPizza.js, but it serves as a placeholder in case something fails -->
+                    <tr><td><a href="classic_pizza.html">Classic Pizza</a></td></tr>
+                </table>
+                <table class="menutable">
+                    <tr><td><a href="premium_pizza.html" class="tda"><img src="../images/menuimg/premium/12.jpg" id="premiumPic"></a></td></tr> <!-- this src will be replaced by randomPizza.js, but it serves as a placeholder in case something fails -->
+                    <tr><td><a href="premium_pizza.html">Premium Pizza</a></td></tr>
+                </table>
+                <table class="menutable">
+                    <tr><td><a href="allergy_list.html">Allergy List</a></td></tr>
+                </table>
+            </article>
+            <footer> <!-- this will be filled in through jQuery load, template.js-->
+            </footer>
+        </div>
+    </body>
+</html>

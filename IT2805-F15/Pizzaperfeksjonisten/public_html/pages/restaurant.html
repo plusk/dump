@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--FILE NAME: restaurant.html
+WRITTEN BY: Sivert N. Solum
+WHEN: October 2015
+PURPOSE: Information about the restaurant
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Restauranten</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../images/misc/favicon.ico" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../scripts/template.js"></script>
+        <script type="text/javascript" src="../scripts/rollover.js"></script>
+        <script type="text/javascript" src="../scripts/randomHeader.js"></script>
+        <script type="text/javascript" src="../scripts/konami.js"></script>
+
+        <script type="text/javascript" src="../scripts/slideshowRestaurant.js"></script>
+    </head>
+    <body>
+        <header id="top"> <!-- this will be filled in through jQuery load, template.js-->
+        </header>
+        <div id="wrapper">
+            <div id="hdiv">
+                <img id="himg" alt="header bilde" src="" /> <!-- src will be supplied by randomHeader.js -->
+            </div>
+            <article id="main">
+                <h2>Om restauranten</h2>
+                <p>
+                    Restauranten åpnet først sine dører i 2012, men siden da har mye forandret seg.
+                    I 2012 besto restauranten kun av 2 bord med tilsammen 8 sitteplasser, siden vi nesten utelukket satset på kunder som ønsket take-away. 
+                    Selv om fokuset på take-away tilbudet vårt ikke har blitt mindre har vi i tillegg valgt å utvide tilbudet for de som heller ønsker å spise inne i restauranten.  
+                    Etter en totalrenovering som startet i utgangen av 2014 er nå restauranten ferdigstilt.
+                    Vår nyoppussede restaurant har en koselig atmosfære, og består av 60 sitteplasser fordelt på 15 bord.
+                </p>
+                <img id="restpics" src="" width="960" height="500" alt="restauranten" /> <!-- this src will be filled by slideshowRestaurant.js -->
+            </article>
+            <footer> <!-- this will be filled in through jQuery load, template.js-->
+            </footer>
+        </div>
+    </body>
+</html>

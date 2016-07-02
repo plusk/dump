@@ -1,0 +1,43 @@
+body {
+	width: 780px;
+	margin: 0 auto; /*centers body*/
+	background-color: #E6E6E6;
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+}
+section {
+	border: 1px solid;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom:20px;
+}
+header {
+	height: 60px;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+figure {
+	width: 550px;
+}
+th {
+	text-transform: uppercase;
+}
+table, th, td{
+	padding: 5px;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+	margin-bottom: 10px;
+}
+.new{
+	color: green;
+}
+.old{
+	color: red;
+}
+
+.testimg {
+	width: 570px;
+	height: 350px;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--FILE NAME: classic_pizza.html
+WRITTEN BY: Håvard Hellem
+WHEN: October 2015
+PURPOSE: display the items in the classic pizza menu.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Classic Pizza</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../images/misc/favicon.ico" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../scripts/template.js"></script>
+        <script type="text/javascript" src="../scripts/rollover.js"></script>
+        <script type="text/javascript" src="../scripts/randomHeader.js"></script>
+        <script type="text/javascript" src="../scripts/konami.js"></script>
+    </head>
+    <body>
+        <header id="top"> <!-- this will be filled in through jQuery load, template.js-->
+        </header>
+        <div id="wrapper">
+            <div id="hdiv">
+                <img id="himg" alt="header bilde" src="" /> <!-- src will be supplied by randomHeader.js -->
+            </div>
+            <article id="main">
+                <h2>Klassisk pizza</h2>
+                <!--Table for menu item-->
+                <table class="pizzatable">
+                    <tr> <!--First row: picture and nr/name.-->
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/1.jpg" alt="pizza 1" /></td>
+                        <td><h2>#1 - Skinke</h2></td>
+                    </tr>
+                    <tr> <!--Second row: ingredients.-->
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Vår originale osteblanding og skinke.</td>
+                    </tr>
+                    <tr> <!--Third row: price and options for HOT and/or VEG-->
+                        <td><b>Pris:</b> 100,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <!-- Repeat this pattern, changing the id, ingredients, name, price and so on -->
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/2.jpg" alt="pizza 2" /></td>
+                        <td><h2>#2 - Pepperoni</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Vår originale osteblanding og pepperoni.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 105,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/3.jpg" alt="pizza 3" /></td>
+                        <td><h2>#3 - Skinke og pepperoni</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Vår originale osteblanding, pepperoni og skinke.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 110,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/4.jpg" alt="pizza 4" /></td>
+                        <td><h2>#4 - Pepperbiff</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Saftig biffkjøtt og fersk rød paprika.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 115,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/5.jpg" alt="pizza 5" /></td>
+                        <td><h2>#5 - Tung himmel</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Saftig biffkjøtt, pepperoni, hvitløkskrydrede kjøttboller og rødløk.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 120,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/6.jpg" alt="pizza 6" /></td>
+                        <td><h2>#6 - Stort skudd</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> BBQ-marinert kylling, crispy bacon, Vår originale Pepperoni og skivede tomater.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 125,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/7.jpg" alt="pizza 7" /></td>
+                        <td><h2>#7 - Thai kylling</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Sataymarinert kylling, fersk paprika, rødløk, ananas, peanøtter, lime-zest og fersk koriander. Inneholder peanøtter.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 130,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/8.jpg" alt="pizza 8" /></td>
+                        <td><h2>#8 - Biff og rosmarin</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Peppermarinert mørbradbiff, purre, salte kapers, finkuttet rosmarin og marinert avokado.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 135,-</td>
+                        <td class="hot"></td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/9.jpg" alt="pizza 9" /></td>
+                        <td><h2>#9 - Biff og chipotle</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Mornaysaus, osteblanding og jalapenocheddar, rødløk og biffkjøtt. Etter steking topper vi den med en mix av purre og fersk koriander samt ekte chipotlesaus.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 140,-</td>
+                        <td class="hot">HOT</td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/10.jpg" alt="pizza 10" /></td>
+                        <td><h2>#10 - Hissig jalapeño</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Tacokrydret kjøttdeig, salsa, hissig jalapeño, fersk paprika, tortillachips og lime-zest.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 145,-</td>
+                        <td class="hot">HOT</td>
+                        <td class="veg"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="pizzatable">
+                    <tr>
+                        <td class="menuimg" rowspan="3"><img src="../images/menuimg/classic/11.jpg" alt="pizza 11" /></td>
+                        <td><h2>#11 - Grønn hage</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="ingred"><b>Ingredienser:</b> Fersk mozzarella, marinert spinat, marinert avokado, rødløk, aromasopp, artisjokk, oliven og cherrytomater. Toppes med nykvernet pepper og limezest etter steking.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pris:</b> 150,-</td>
+                        <td class="hot"></td>
+                        <td class="veg">VEG</td>
+                    </tr>
+                </table>
+            </article>
+            <footer> <!-- this will be filled in through jQuery load, template.js-->
+            </footer>
+        </div>
+    </body>
+</html>
