@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			window.addEventListener("load", whenLoaded);
+			function whenLoaded() {
+			    var stringArray = ["First string","Second string","Third string","Fourth string","Fifth string","Sixth string","Seventh string","Eighth string","Ninth string","Tenth string"];
+			    document.getElementById("arrayOutput").innerHTML = (stringArray[Math.floor(Math.random()*stringArray.length)]);
+			}
+		</script>
+	</head>
+	<body>
+		<p>The content of the string below is from a random index of the stringArray.</p>
+		<output id="arrayOutput"></output>
+	</body>
+</html>
+

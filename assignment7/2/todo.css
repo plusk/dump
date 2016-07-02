@@ -1,0 +1,30 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+#wrapper {
+	margin: 0px auto;
+	width: 500px;
+	border: 1px solid;
+	height: auto;
+	padding: 25px;
+	padding-top: 0px;
+}
+ul {
+	list-style-type: none;
+}
+input[type=text] {
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid;
+	border-color: #000;
+}
+input[type=submit], #clear{
+	background-color: #000;
+	color: #FFF;
+	box-shadow: #0F0 0px 0px 0px 0px;
+	border: 1px solid;
+	border-color: #000;
+}
+input[type=submit] {
+	width: 21px;
+}

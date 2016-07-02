@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="bank">
+		<xsd:complexType>
+			<xsd:sequence>
+
+				<xsd:element name="accounts">
+					<xsd:complexType>
+						<xsd:sequence>
+
+							<xsd:element name="savings_accounts">
+								<xsd:complexType>
+									<xsd:sequence>
+
+										<xsd:element name="savings_account" minOccurs="0" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+
+													<xsd:element name="balance" type="xsd:string"/>
+
+												</xsd:sequence>
+												<xs:attribute name="id" type="xsd:ID"/>
+												<xs:attribute name="interest" type="xsd:float"/>
+											</xsd:complexType>
+										</xsd:element>
+
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+
+							<xsd:element name="checking_accounts">
+								<xsd:complexType>
+									<xsd:sequence>
+
+										<xsd:element name="checking_account" minOccurs="0" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+
+													<xsd:element name="balance" type="xsd:string"/>
+
+												</xsd:sequence>
+												<xs:attribute name="id" type="xsd:ID"/>
+											</xsd:complexType>
+										</xsd:element>
+
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+
+				<xsd:element name="customers">
+					<xsd:complexType>
+						<xsd:sequence>
+
+							<xsd:element name="customer" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+
+										<xsd:element name="name" type="xsd:string"/>
+										<xsd:element name="address" type="xsd:string"/>
+
+									</xsd:sequence>
+									<xs:attribute name="id" type="xsd:ID"/>
+								</xsd:complexType>
+							</xsd:element>
+
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+
+				<xsd:element name="customer_accounts">
+					<xsd:complexType>
+						<xsd:sequence>
+
+							<xsd:element name="customer_account" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+
+									</xsd:sequence>
+									<xs:attribute name="customer_id" type="xsd:IDREF"/>
+									<xs:attribute name="account_id" type="xsd:IDREF"/>
+								</xsd:complexType>
+							</xsd:element>
+
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

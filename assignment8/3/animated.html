@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Graphics and animation using HTML5 Canvas</title>
+        <style>
+            #the-canvas { border: 1px dashed gray }   
+        </style>
+        <script>
+            addEventListener('load', function() {
+                // skeleton
+                var canvas = document.getElementById("the-canvas");
+                var centerX = canvas.width / 2;
+                var centerY = canvas.height / 2;
+
+                var ctx = canvas.getContext("2d");
+
+                // doge
+                var img = new Image();
+                img.src = "doge.jpg";
+
+                img.onload = function(){
+                    // animate
+                    var path = {centerX:centerX, centerY:centerY, radius:100, angle:0}
+                    var x = 0
+                    var y = 0
+
+                    function  drawScreen () {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                        // Tegner sirkelen og firkanten også
+                        ctx.strokeStyle = "#0000FF";
+                        ctx.strokeRect(centerX-100, centerY-100, 200, 200);
+
+                        ctx.strokeStyle = "#FF0000";
+                        ctx.beginPath();
+                        ctx.arc(centerX, centerY, 100, 0, 2 * Math.PI);
+
+                        ctx.fillStyle = "#FF0000";
+                        ctx.fill();
+                        ctx.stroke();
+                        
+                        x = path.centerX + Math.cos(path.angle) * path.radius;
+                        y = path.centerY + Math.sin(path.angle) * path.radius;
+                        
+                        path.angle += 0.05;
+                        ctx.drawImage(img, x-40, y-40)
+                    }
+                    setInterval(drawScreen, 1000/60); //60 frames per second
+                } 
+            });
+        </script>
+    </head>
+    <body>
+        <canvas id="the-canvas" width="800" height="450">   
+            Your browser does not support the &lt;canvas&gt; element.
+        </canvas>
+    </body>
+</html>

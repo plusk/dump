@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" type="xs:string"/>
+				<xs:element name="author" type="xs:string"/>
+				<xs:element name="character" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="friend-of" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="since" type="xs:date"/>
+							<xs:element name="qualification" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="isbn" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<book isbn="0836217462">
+	<title>
+		Being a Dog Is a Full-Time Job
+	</title>
+	<author>Charles M. Schulz</author>
+	<character>
+		<name>Snoopy</name>
+		<friend-of>Peppermint Patty</friend-of>
+		<since>1950-10-04</since>
+		<qualification>
+	extroverted beagle
+		</qualification>
+	</character>
+	<character>
+		<name>Peppermint Patty</name>
+		<since>1966-08-22</since>
+		<qualification>bold, brash and tomboyish</qualification>
+	</character>
+</book>
+
